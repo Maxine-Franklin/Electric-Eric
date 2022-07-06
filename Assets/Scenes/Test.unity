@@ -236,6 +236,7 @@ GameObject:
   m_Component:
   - component: {fileID: 197269894}
   - component: {fileID: 197269893}
+  - component: {fileID: 197269895}
   m_Layer: 0
   m_Name: GameControlSystem
   m_TagString: Untagged
@@ -273,6 +274,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &197269895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197269892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fdea9973926b124c806d377e089baa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectPos: {x: 0, y: 0, z: 0}
+  yourPrefab: {fileID: 218987557904784088, guid: ccbd2ddb2940c594e892ccbced1bb7e9, type: 3}
 --- !u!1 &243176636
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,7 +380,7 @@ Transform:
   m_GameObject: {fileID: 243176636}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 10, y: 6, z: 6}
+  m_LocalScale: {x: 12.528919, y: 6, z: 6}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -707,9 +722,9 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 90
   orthographic: 0
-  orthographic size: 5
+  orthographic size: 30
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1046,7 +1061,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -1426,7 +1441,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Ah
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1712746098
@@ -1480,6 +1495,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Camera: {fileID: 868226345}
+  towerMeUpDaddy: {fileID: 197269895}
+  url: 
 --- !u!1 &1725704413
 GameObject:
   m_ObjectHideFlags: 0
