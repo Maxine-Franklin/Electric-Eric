@@ -1,45 +1,47 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class SpawnTowers : MonoBehaviour
 {
-    //private Camera cam = null;
+    private Vector3 mousePos;
+    public  Vector3 objectPos;
+    public GameObject yourPrefab;
+    private bool enableScript = false;
+    public bool SpawnTowersEnable
+    {
+        get { return enableScript; }
+        set { enableScript = value; }
+    }
 
-    //// Start is called before the first frame update
-    //void Start()
-    //{
-    //    cam = Camera.main;
-    //}
+    private void Update()
+    {
+        if (enableScript)
+        {
+            Debug.Log("Start of loop");
 
-    //// Update is called once per frame
-    //void Update()
-    //{
-    //        Vector3 mousePos = Input.mousePosition;
-    //}
+            if (Input.GetButtonDown("Fire1"))
+            {
+                Debug.Log("Button Down");
 
-    //private void SpawnAtMousePos()
+                mousePos = Input.mousePosition;
+                mousePos.z = 2.0f;
+                objectPos = Camera.main.ScreenToWorldPoint(mousePos);
+                Instantiate(yourPrefab, objectPos, Quaternion.identity);
+                Debug.Log("Button Down");
+
+            }
+        }
+    }
+
+    //public void SpawnAtMousePos()
     //{
     //    if (Input.GetButtonDown("Fire1"))
     //    {
-    //        Ray ray = cam.ScreenPointToRay()
+    //        mousePos = Input.mousePosition;
+    //        mousePos.z = 2.0f;
+    //        objectPos = Camera.main.ScreenToWorldPoint(mousePos);
+    //        Instantiate(yourPrefab, objectPos, Quaternion.identity);
     //    }
-
     //}
-
-    private Vector3 mousePos;
-    private Vector3 objectPos;
-    public GameObject yourPrefab;
-
-    public void SpawnAtMousePos()
-    {
-        if (Input.GetButtonDown("Fire1"))
-        {
-            mousePos = Input.mousePosition;
-            mousePos.z = 2.0f;
-            objectPos = Camera.main.ScreenToWorldPoint(mousePos);
-            Instantiate(yourPrefab, objectPos, Quaternion.identity);
-        }
-    }
 }
