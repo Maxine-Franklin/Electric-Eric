@@ -18,18 +18,12 @@ public class SpawnTowers : MonoBehaviour
     {
         if (enableScript)
         {
-            Debug.Log("Start of loop");
-
             if (Input.GetButtonDown("Fire1"))
             {
-                Debug.Log("Button Down");
-
                 mousePos = Input.mousePosition;
                 mousePos.z = 2.0f;
                 objectPos = Camera.main.ScreenToWorldPoint(mousePos);
                 Instantiate(yourPrefab, objectPos, Quaternion.identity);
-                Debug.Log("Button Down");
-
             }
         }
     }

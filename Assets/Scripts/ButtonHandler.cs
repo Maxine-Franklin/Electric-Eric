@@ -7,8 +7,10 @@ public class ButtonHandler : MonoBehaviour
 {
     int number = 0;
     public GameObject Camera;
-    public SpawnTowers towerMeUpDaddy;    
-    
+    public SpawnTowers towerMeUpDaddy;
+
+    public Camera MainCamera;
+
     public string url;
 
     //gameObject.properties<SpawnTowers>().SpawnTowersEnable = 1;
@@ -28,6 +30,8 @@ public class ButtonHandler : MonoBehaviour
             Camera.transform.position = new Vector3(0, 3, 10);
             Camera.transform.Rotate(-90, 0, 0);
             towerMeUpDaddy.SpawnTowersEnable = false;
+            MainCamera.orthographic = false;
+
         }
         else
         {
@@ -35,8 +39,12 @@ public class ButtonHandler : MonoBehaviour
             Camera.transform.position = new Vector3(0, 30, 0);
             Camera.transform.Rotate(90, 0, 0);
             towerMeUpDaddy.SpawnTowersEnable = true;
+            MainCamera.orthographic = true;
         }
     }
+
+    //Comment 
+    //If statment for placement of towers 
 
     public void OpenURL()
     {
