@@ -1294,7 +1294,7 @@ GameObject:
   - component: {fileID: -8728933247929220002}
   m_Layer: 0
   m_Name: Espionage Tower
-  m_TagString: Untagged
+  m_TagString: Espionage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

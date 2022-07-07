@@ -20,6 +20,7 @@ public class SpawnTowers : MonoBehaviour
     public GameObject LumberYard;
 
     public string Towername;
+    public DamProgress damProgress;
 
     //Activates the Spawn tower function when enabled in another script
     public bool SpawnTowersEnable
@@ -86,6 +87,7 @@ public class SpawnTowers : MonoBehaviour
                 {
                     if (GameObject.FindObjectOfType<MoneySystem>().money >= 40)
                     {
+                        damProgress.masqueradingWorkers = 1;
                         Instantiate(Espionage, objectPos, Quaternion.identity);
                         GameObject.FindObjectOfType<MoneySystem>().subtractMoney(40);
                     }

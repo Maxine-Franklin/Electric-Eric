@@ -8,6 +8,7 @@ public class buildingCollider : MonoBehaviour
     {
         if (collision.gameObject.tag == "Terrain")
         {
+            if (gameObject.tag == "Espionage") { GameObject.Find("GameControlSystem").GetComponent<DamProgress>().masqueradingWorkers = -1; }
             Destroy(gameObject);
         }
         if (collision.gameObject.name == "Water")

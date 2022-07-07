@@ -71,7 +71,7 @@ public class ButtonHandler : MonoBehaviour
     //Change scene
     public void NextScene()
     {
-        SceneManager.LoadScene(SceneToTransitionTo);
+        SceneManager.LoadScene("Terrain Testing");
     }
 
     public void EnablePanel()

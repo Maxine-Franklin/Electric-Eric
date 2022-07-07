@@ -7,6 +7,11 @@ public class WaveSpawner : MonoBehaviour
     public Transform enemyPrefab;
     public Transform spawnPoint;
 
+    public float workersPerSecond = 0.05f; //Workers spawning every second
+    private float workersToSpawn = 0; //Tracker for when a worker should be spawned
+    public float workerIncreasePerSecond = 0.05f; //Increase in spawn rates of workers over time
+    public float workerIncreaseAcceleration = 0.001f; //Increases the increase rate of workers over time
+
     public float timeBetweenWaves = 5;
     public float currentSpeed = 10f;
     private float countdown = 2f;
@@ -17,7 +22,19 @@ public class WaveSpawner : MonoBehaviour
         currentSpeed = 15f;
     }
 
-    void Update()
+    private void FixedUpdate()
+    {
+        workersToSpawn += workersPerSecond * Time.deltaTime;
+        while (workersToSpawn > 1)
+        {
+            workersToSpawn -= 1;
+            SpawnEnemy();
+        }
+        workersPerSecond += workerIncreasePerSecond * Time.deltaTime;
+        workerIncreasePerSecond += workerIncreaseAcceleration * Time.deltaTime;
+    }
+
+    /*void Update()
     {
         if(countdown <= 0f)
         {
@@ -37,7 +54,7 @@ public class WaveSpawner : MonoBehaviour
                 SpawnEnemy();
                 yield return new WaitForSeconds(0.5f);
             }
-    }
+    }*/
 
     void SpawnEnemy()
     {

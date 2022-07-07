@@ -1151,8 +1151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e85748371e4dd44882e74d6ef325d00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitforsecounds: 5
-  addedmoneyamount: 10
+  woodPerSecond: 2.5
 --- !u!114 &3213384878804787122
 MonoBehaviour:
   m_ObjectHideFlags: 0

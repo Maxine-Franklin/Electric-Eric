@@ -12,9 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Credits.unity
     guid: 735eeaa37f55b5f408b023163bac4fce
   - enabled: 1
-    path: Assets/Scenes/Test.unity
-    guid: 903f24cf86ddcab46bbcb9a68486cc02
-  - enabled: 1
     path: Assets/Scenes/Options.unity
     guid: 2df8a34716a9e20469184cc49ef8d1b5
+  - enabled: 1
+    path: Assets/Scenes/Terrain Testing.unity
+    guid: 8976664403b9fba4d98fc372f1b493f0
+  - enabled: 0
+    path: Assets/Scenes/Test.unity
+    guid: 903f24cf86ddcab46bbcb9a68486cc02
   m_configObjects: {}
