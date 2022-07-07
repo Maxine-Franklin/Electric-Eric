@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2599934057451437517}
   - component: {fileID: 2028194375133408239}
-  - component: {fileID: 8389301380070368266}
   m_Layer: 0
   m_Name: Propaganda
   m_TagString: Untagged
@@ -56,26 +55,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 90
   m_CollisionDetection: 0
---- !u!114 &8389301380070368266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 218987557904784088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61a2fa00b701d464d9b8267daff5b324, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  range: 55
-  fireRate: 1
-  fireCountDown: 0
-  turnSpeed: 10
-  enemyTag: Enemy
-  partToRotate: {fileID: 2599934057451437517}
-  bulletprefab: {fileID: 0}
-  firePoint: {fileID: 0}
 --- !u!1 &3474598811638689001
 GameObject:
   m_ObjectHideFlags: 0
