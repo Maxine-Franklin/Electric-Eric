@@ -28,8 +28,8 @@ public class ButtonHandler : MonoBehaviour
         {
             //Move postion of camera and turn of placing towers
             number--;
-            Camera.transform.position = new Vector3(0, 3, 10);
-            Camera.transform.Rotate(-90, 0, 0);
+            Camera.transform.position = new Vector3(0, 120, 76.6f);
+            Camera.transform.Rotate(-45, 0, 0);
             TowerToSpawn.SpawnTowersEnable = false;
             MainCamera.clearFlags = CameraClearFlags.Skybox; //Turns background to use the skybox
 
@@ -40,8 +40,8 @@ public class ButtonHandler : MonoBehaviour
         {
             //Move postion of camera and allow placing on towers
             number++;
-            Camera.transform.position = new Vector3(0, 30, 0);
-            Camera.transform.Rotate(90, 0, 0);
+            Camera.transform.position = new Vector3(0, 40, 0);
+            Camera.transform.Rotate(45, 0, 0);
             TowerToSpawn.SpawnTowersEnable = true;
             MainCamera.clearFlags = CameraClearFlags.Skybox; //Turns the background to a solid colour
 
