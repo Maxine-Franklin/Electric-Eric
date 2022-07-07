@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ButtonHandler : MonoBehaviour
 {
@@ -9,7 +10,9 @@ public class ButtonHandler : MonoBehaviour
     public GameObject Camera;
     public SpawnTowers TowerToSpawn;
     public Camera MainCamera;
-    public string url;
+    public string url; 
+    public string SceneToTransitionTo;
+
 
     //Set Text when button pressed
     public void SetText(string text)
@@ -53,6 +56,12 @@ public class ButtonHandler : MonoBehaviour
     public void OpenURL()
     {
         Application.OpenURL(url);
+    }
+
+    //Change scene
+    public void NextScene()
+    {
+        SceneManager.LoadScene(SceneToTransitionTo);
     }
 
 }
