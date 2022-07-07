@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DamProgress : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class DamProgress : MonoBehaviour
     public GameObject dam;
     public GameObject water;
     private Vector3[] gameObjectPos = { Vector3.zero, Vector3.zero };
+
+    public Slider waterLevelSlider;
 
     // Start is called before the first frame update
     void Start()
@@ -38,6 +41,8 @@ public class DamProgress : MonoBehaviour
             //Adjusts the dam and water positions to reflect upon dam progress
             dam.transform.position = new Vector3(gameObjectPos[0].x, gameObjectPos[0].y + yAdjust * currentDamProgress, gameObjectPos[0].z);
             water.transform.position = new Vector3(gameObjectPos[1].x, gameObjectPos[1].y - yAdjust * currentDamProgress, gameObjectPos[1].z);
+
+            waterLevelSlider.value = currentDamProgress; //Changes the value of a UI slider to show the player how much water they have left
         }
         else if (gameOver == false) //if the dam has been completed...
         {
