@@ -82,7 +82,7 @@ public class ButtonHandler : MonoBehaviour
         //Camera.transform.position = new Vector3(0, 30, 0);
         //Camera.transform.Rotate(90, 0, 0);
         //Camera.transform.position = new Vector3(0, 40, 0); //Sets the new camera position
-        Camera.transform.position = new Vector3(cameraPos.x, cameraPos.y, 0); //Sets the new camera position
+        Camera.transform.position = new Vector3(cameraPos.x, cameraPos.y, cameraPos.z - 78.2f); //Sets the new camera position
         Camera.transform.Rotate(45, 0, 0); //Rotates the camera for a top down view
         MainCamera.clearFlags = CameraClearFlags.Skybox; //Turns the background to a solid colour
 
@@ -94,7 +94,7 @@ public class ButtonHandler : MonoBehaviour
         MainCamera.orthographic = false;
         //Camera.transform.position = new Vector3(0, 3, 10);
         //Camera.transform.Rotate(-90, 0, 0);
-        Camera.transform.position = new Vector3(cameraPos.x, cameraPos.y , cameraPos.z); //Sets the new camera position
+        Camera.transform.position = new Vector3(cameraPos.x, cameraPos.y , cameraPos.z + 78.2f); //Sets the new camera position
         Camera.transform.Rotate(-45, 0, 0); //Sets the camera to a side on view
         MainCamera.clearFlags = CameraClearFlags.Skybox; //Turns background to use the skybox
     }

@@ -21,6 +21,11 @@ public class buildingMaster : MonoBehaviour
         if (priorWaterLevel - 0.1f > damProgress.waterLevel)
         {
             priorWaterLevel -= 0.1f;
+            foreach (buildingCollider buidling in colliders)
+            {
+                //if (buidling.gameObject.GetComponent<Collision>().collider.tag == "terrain")
+                //{ colliders.Remove(buidling); buidling. }
+            }
             //Check for collisions on buildings
         }
     }
