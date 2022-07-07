@@ -46,10 +46,12 @@ public class ButtonHandler : MonoBehaviour
             //Change camera perspective
             MainCamera.orthographic = true;
         }
+        */
+
         string myName = gameObject.name;
         Debug.Log(myName);
         TowerToSpawn.Towername = myName;
-        TowerToSpawn.SpawnTowersEnable = true;*/
+        TowerToSpawn.SpawnTowersEnable = true;
     }
 
     //URL link

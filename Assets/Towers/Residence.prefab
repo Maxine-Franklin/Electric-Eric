@@ -298,7 +298,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3897228252090444835}
   - component: {fileID: 1812702163283364724}
-  - component: {fileID: -2649737817418085695}
   m_Layer: 0
   m_Name: Residence
   m_TagString: Untagged
@@ -340,26 +339,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 90
   m_CollisionDetection: 0
---- !u!114 &-2649737817418085695
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6764775236055517707}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61a2fa00b701d464d9b8267daff5b324, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  range: 55
-  fireRate: 1
-  fireCountDown: 0
-  turnSpeed: 10
-  enemyTag: Enemy
-  partToRotate: {fileID: 0}
-  bulletprefab: {fileID: 7832618306201194951, guid: 5142692a7e1983844b6719ba10dec73b, type: 3}
-  firePoint: {fileID: 0}
 --- !u!1001 &6781521206284047486
 PrefabInstance:
   m_ObjectHideFlags: 0
