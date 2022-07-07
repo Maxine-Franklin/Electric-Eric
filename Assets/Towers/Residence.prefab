@@ -298,6 +298,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3897228252090444835}
   - component: {fileID: 1812702163283364724}
+  - component: {fileID: 8191093392334997908}
   m_Layer: 0
   m_Name: Residence
   m_TagString: Untagged
@@ -331,14 +332,28 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6764775236055517707}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 100
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 100
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 90
   m_CollisionDetection: 0
+--- !u!64 &8191093392334997908
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6764775236055517707}
+  m_Material: {fileID: 13400000, guid: 54dd608332f3ce04aa66634114169872, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &6781521206284047486
 PrefabInstance:
   m_ObjectHideFlags: 0
