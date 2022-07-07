@@ -1395,7 +1395,7 @@ PrefabInstance:
       objectReference: {fileID: 197269895}
     - target: {fileID: 1035916713720807242, guid: 550ae04663732a1499672881fbc1d1a8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1936970807390136369, guid: 550ae04663732a1499672881fbc1d1a8, type: 3}
       propertyPath: panel
@@ -1431,11 +1431,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2005941110228241290, guid: 550ae04663732a1499672881fbc1d1a8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 192.20007
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2005941110228241290, guid: 550ae04663732a1499672881fbc1d1a8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -82
+      value: -72
       objectReference: {fileID: 0}
     - target: {fileID: 2163129570760988134, guid: 550ae04663732a1499672881fbc1d1a8, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1515,11 +1515,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5357152519761926008, guid: 550ae04663732a1499672881fbc1d1a8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 57
+      value: 113.3
       objectReference: {fileID: 0}
     - target: {fileID: 5357152519761926008, guid: 550ae04663732a1499672881fbc1d1a8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 51.099976
+      value: 55.9
       objectReference: {fileID: 0}
     - target: {fileID: 5758427613358732688, guid: 550ae04663732a1499672881fbc1d1a8, type: 3}
       propertyPath: panel
@@ -1759,7 +1759,7 @@ PrefabInstance:
       objectReference: {fileID: 197269895}
     - target: {fileID: 6855850591303080740, guid: 550ae04663732a1499672881fbc1d1a8, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7973541870494093303, guid: 550ae04663732a1499672881fbc1d1a8, type: 3}
       propertyPath: Camera

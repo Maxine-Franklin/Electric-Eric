@@ -1071,6 +1071,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3184837949714963565}
   - component: {fileID: 1797847653628148226}
+  - component: {fileID: 1341828618010473884}
   m_Layer: 0
   m_Name: LumberYard
   m_TagString: Untagged
@@ -1122,6 +1123,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 90
   m_CollisionDetection: 0
+--- !u!114 &1341828618010473884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7887171155805158184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e85748371e4dd44882e74d6ef325d00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waitforsecounds: 5
+  addedmoneyamount: 10
 --- !u!1 &7909587979374404956
 GameObject:
   m_ObjectHideFlags: 0
