@@ -604,7 +604,7 @@ Transform:
   m_GameObject: {fileID: 5950840936371101688}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children:
   - {fileID: 5508520802228236374}
   - {fileID: 6648370229891718564}
@@ -649,7 +649,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 55
   fireRate: 1
-  fireCountDown: 0
+  fireCountDown: 3
   turnSpeed: 10
   enemyTag: Enemy
   partToRotate: {fileID: 3383547175330100462}
