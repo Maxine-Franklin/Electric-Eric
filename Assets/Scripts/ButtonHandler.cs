@@ -6,13 +6,13 @@ using UnityEngine.SceneManagement;
 
 public class ButtonHandler : MonoBehaviour
 {
-    int number = 0;
+    public string Tower;
     public GameObject Camera;
     public SpawnTowers TowerToSpawn;
     public Camera MainCamera;
-    public string url; 
+    public string url;
     public string SceneToTransitionTo;
-
+    public GameObject panel;
 
     //Set Text when button pressed
     public void SetText(string text)
@@ -21,10 +21,10 @@ public class ButtonHandler : MonoBehaviour
         txt.text = text;
     }
 
-    //If button pressed function run 
+    //If button pressed allow to spawn tower
     public void PressedButton()
     {
-        if (number == 1) //standard play mode
+        /*if (number == 1) //standard play mode
         {
             //Move postion of camera and turn off placing towers
             number--;
@@ -46,11 +46,11 @@ public class ButtonHandler : MonoBehaviour
             //Change camera perspective
             MainCamera.orthographic = true;
         }
+        string myName = gameObject.name;
+        Debug.Log(myName);
+        TowerToSpawn.Towername = myName;
+        TowerToSpawn.SpawnTowersEnable = true;*/
     }
-
-    //Comment 
-    //If statment for placement of towers 
-    //If money not enough no tower, combined with tower
 
     //URL link
     public void OpenURL()
@@ -62,6 +62,26 @@ public class ButtonHandler : MonoBehaviour
     public void NextScene()
     {
         SceneManager.LoadScene(SceneToTransitionTo);
+    }
+
+    public void EnablePanel()
+    {
+        //Change camera perspective, camera postion enables build mode
+        panel.SetActive(true);
+        MainCamera.orthographic = true;
+        Camera.transform.position = new Vector3(0, 30, 0);
+        Camera.transform.Rotate(90, 0, 0);
+        MainCamera.clearFlags = CameraClearFlags.Skybox; //Turns the background to a solid colour
+
+    }
+    public void DisablePanel()
+    {
+        //Move postion of camera and disable build mode
+        panel.SetActive(false);
+        MainCamera.orthographic = false;
+        Camera.transform.position = new Vector3(0, 3, 10);
+        Camera.transform.Rotate(-90, 0, 0);
+        MainCamera.clearFlags = CameraClearFlags.Skybox; //Turns background to use the skybox
     }
 
 }
