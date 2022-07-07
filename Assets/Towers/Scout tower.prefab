@@ -1018,7 +1018,7 @@ Transform:
   m_GameObject: {fileID: 8701078864430786388}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children:
   - {fileID: 515145961327940541}
   - {fileID: 1909516685094005837}
@@ -1065,7 +1065,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61a2fa00b701d464d9b8267daff5b324, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 55
+  range: 30
   fireRate: 1
   fireCountDown: 0
   turnSpeed: 10
