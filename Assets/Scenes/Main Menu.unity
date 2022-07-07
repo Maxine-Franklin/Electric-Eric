@@ -510,11 +510,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a1a067bf5f09564783e0a431f7a3805, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: 
   Camera: {fileID: 0}
   TowerToSpawn: {fileID: 0}
   MainCamera: {fileID: 0}
   url: https://en.wikipedia.org/wiki/Eric_Reece
   SceneToTransitionTo: 
+  panel: {fileID: 0}
 --- !u!1 &846187173
 GameObject:
   m_ObjectHideFlags: 0
@@ -884,7 +886,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 10.256}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -25, y: -13}
+  m_AnchoredPosition: {x: -27, y: -2}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1183962534
@@ -1056,11 +1058,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a1a067bf5f09564783e0a431f7a3805, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: 
   Camera: {fileID: 0}
   TowerToSpawn: {fileID: 0}
   MainCamera: {fileID: 0}
   url: 
   SceneToTransitionTo: Test
+  panel: {fileID: 0}
 --- !u!114 &1454769426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1207,11 +1211,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a1a067bf5f09564783e0a431f7a3805, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: 
   Camera: {fileID: 0}
   TowerToSpawn: {fileID: 0}
   MainCamera: {fileID: 0}
   url: 
   SceneToTransitionTo: Options
+  panel: {fileID: 0}
 --- !u!114 &1547047659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1512,11 +1518,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a1a067bf5f09564783e0a431f7a3805, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: 
   Camera: {fileID: 0}
   TowerToSpawn: {fileID: 0}
   MainCamera: {fileID: 0}
   url: 
   SceneToTransitionTo: Credits
+  panel: {fileID: 0}
 --- !u!114 &1800069555
 MonoBehaviour:
   m_ObjectHideFlags: 0
