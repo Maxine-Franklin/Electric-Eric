@@ -25,6 +25,6 @@ public class buildingCollider : MonoBehaviour
     //Checks for any collisions with any gameObjects with the terrain tab
     public void checkForCollisions()
     {
-
+        
     }
 }

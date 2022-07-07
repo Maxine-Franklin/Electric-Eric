@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class cameraController : MonoBehaviour
 {
-    public GameObject terrain; //Main player camera
+    public GameObject terrain; //Terrain prefab
     private int layer = 10; //Current layer tracker
     private Vector3 cameraPos = Vector3.zero; //Position of player camera
 
@@ -33,6 +33,9 @@ public class cameraController : MonoBehaviour
                 //Decreases the camera's vertical position by 1 layer
                 cameraPos.y -= 2.54f;
                 gameObject.transform.position = cameraPos;
+
+                //Transform tLayer = terrain.transform.Find("Layer " + layer);
+                //tLayer.transform.GetChild(0).GetComponentInChildren<MeshRenderer>().enabled = false;
 
                 layer -= 1; //Decreases the current tracked layer by 1
             }
