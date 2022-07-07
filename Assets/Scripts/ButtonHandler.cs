@@ -24,10 +24,32 @@ public class ButtonHandler : MonoBehaviour
     //If button pressed allow to spawn tower
     public void PressedButton()
     {
+        /*if (number == 1) //standard play mode
+        {
+            //Move postion of camera and turn off placing towers
+            number--;
+            Camera.transform.position = new Vector3(0, 120, 76.6f); //Sets the new camera position
+            Camera.transform.Rotate(-45, 0, 0); //Sets the camera to a side on view
+            TowerToSpawn.SpawnTowersEnable = false;
+
+            //Change camera perspective
+            MainCamera.orthographic = false;
+        }
+        else //Build mode
+        {
+            //Move postion of camera and allow placing on towers
+            number++;
+            Camera.transform.position = new Vector3(0, 40, 0); //Sets the new camera position
+            Camera.transform.Rotate(45, 0, 0); //Rotates the camera for a top down view
+            TowerToSpawn.SpawnTowersEnable = true;
+
+            //Change camera perspective
+            MainCamera.orthographic = true;
+        }
         string myName = gameObject.name;
         Debug.Log(myName);
         TowerToSpawn.Towername = myName;
-        TowerToSpawn.SpawnTowersEnable = true;
+        TowerToSpawn.SpawnTowersEnable = true;*/
     }
 
     //URL link
