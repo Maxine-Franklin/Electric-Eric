@@ -31,6 +31,7 @@ public class ButtonHandler : MonoBehaviour
             Camera.transform.position = new Vector3(0, 3, 10);
             Camera.transform.Rotate(-90, 0, 0);
             TowerToSpawn.SpawnTowersEnable = false;
+            MainCamera.clearFlags = CameraClearFlags.Skybox; //Turns background to use the skybox
 
             //Change camera perspective
             MainCamera.orthographic = false;
@@ -42,6 +43,7 @@ public class ButtonHandler : MonoBehaviour
             Camera.transform.position = new Vector3(0, 30, 0);
             Camera.transform.Rotate(90, 0, 0);
             TowerToSpawn.SpawnTowersEnable = true;
+            MainCamera.clearFlags = CameraClearFlags.Skybox; //Turns the background to a solid colour
 
             //Change camera perspective
             MainCamera.orthographic = true;
