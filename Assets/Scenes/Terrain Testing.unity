@@ -318,6 +318,7 @@ GameObject:
   - component: {fileID: 197269895}
   - component: {fileID: 197269896}
   - component: {fileID: 197269897}
+  - component: {fileID: 197269898}
   m_Layer: 0
   m_Name: GameControlSystem
   m_TagString: Untagged
@@ -367,6 +368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fdea9973926b124c806d377e089baa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buildMaster: {fileID: 197269898}
   Balsita: {fileID: 9052711134264724823, guid: 9a2e425387db05f46921a1800817f767, type: 3}
   ScoutTower: {fileID: 8701078864430786388, guid: d66b6ca5049b54d49a79fea1010991d2, type: 3}
   Trebuchet: {fileID: 5950840936371101688, guid: bd8a8611748fbff41803354f48717d55, type: 3}
@@ -405,6 +407,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   money: 100
   moneyText: {fileID: 1478951328}
+--- !u!114 &197269898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197269892}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bbf573f110930f4f805175f0bdf9e40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colliders: []
+  damProgress: {fileID: 197269896}
 --- !u!1 &226155370 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3692695369471174933, guid: 696b19a61e1730348b8cde6b7e2a43c1, type: 3}

@@ -5,7 +5,7 @@ using UnityEngine;
 public class buildingMaster : MonoBehaviour
 {
 
-    public List<buildingCollider> colliders;
+    public List<GameObject> colliders;
     public DamProgress damProgress;
     private float priorWaterLevel = 1.0f;
 
@@ -21,10 +21,10 @@ public class buildingMaster : MonoBehaviour
         if (priorWaterLevel - 0.1f > damProgress.waterLevel)
         {
             priorWaterLevel -= 0.1f;
-            foreach (buildingCollider buidling in colliders)
+            foreach (GameObject buidling in colliders)
             {
-                //if (buidling.gameObject.GetComponent<Collision>().collider.tag == "terrain")
-                //{ colliders.Remove(buidling); buidling. }
+                if (buidling.GetComponent<MeshCollider>().GetComponent<Collider>().tag == "Terrain")
+                { colliders.Remove(buidling); Destroy(buidling); }
             }
             //Check for collisions on buildings
         }

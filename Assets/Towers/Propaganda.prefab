@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2599934057451437517}
   - component: {fileID: 2028194375133408239}
   - component: {fileID: 7119819260492188995}
+  - component: {fileID: 8088902693043268424}
   m_Layer: 0
   m_Name: Propaganda
   m_TagString: Untagged
@@ -64,12 +65,24 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 218987557904784088}
   m_Material: {fileID: 13400000, guid: 54dd608332f3ce04aa66634114169872, type: 2}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &8088902693043268424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218987557904784088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24bef8ae02135b14ea6311c8e0ca5539, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3474598811638689001
 GameObject:
   m_ObjectHideFlags: 0

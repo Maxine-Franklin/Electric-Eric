@@ -8,6 +8,8 @@ public class SpawnTowers : MonoBehaviour
     private Vector3 objectPos;
     private bool enableScript = false;
 
+    //public buildingMaster buildMaster; //Destroyer of buildings
+
     public GameObject Balsita;
     public GameObject ScoutTower;
     public GameObject Trebuchet;
@@ -38,11 +40,16 @@ public class SpawnTowers : MonoBehaviour
                 mousePos = Input.mousePosition;
                 mousePos.z = 2.0f;
                 objectPos = Camera.main.ScreenToWorldPoint(mousePos);
+                //Performs a raycast from object spawn location towards the ground
+                RaycastHit hit;
+                Physics.Raycast(objectPos, new Vector3(0, -1, 0), out hit);
+                objectPos.y -= hit.distance / 1.2f; //Decreases object spawn height from ground
 
                 if (Towername == ("Ballista"))
                 {
                     if (GameObject.FindObjectOfType<MoneySystem>().money >= 45)
                     {
+                        //buildMaster.colliders.Add(Instantiate(Balsita, objectPos, Quaternion.identity));
                         Instantiate(Balsita, objectPos, Quaternion.identity);
                         GameObject.FindObjectOfType<MoneySystem>().subtractMoney(45);
                     }
