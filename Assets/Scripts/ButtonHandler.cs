@@ -71,8 +71,10 @@ public class ButtonHandler : MonoBehaviour
         //Change camera perspective, camera postion enables build mode
         panel.SetActive(true);
         MainCamera.orthographic = true;
-        Camera.transform.position = new Vector3(0, 30, 0);
-        Camera.transform.Rotate(90, 0, 0);
+        //Camera.transform.position = new Vector3(0, 30, 0);
+        //Camera.transform.Rotate(90, 0, 0);
+        Camera.transform.position = new Vector3(0, 40, 0); //Sets the new camera position
+        Camera.transform.Rotate(45, 0, 0); //Rotates the camera for a top down view
         MainCamera.clearFlags = CameraClearFlags.Skybox; //Turns the background to a solid colour
 
     }
@@ -81,8 +83,10 @@ public class ButtonHandler : MonoBehaviour
         //Move postion of camera and disable build mode
         panel.SetActive(false);
         MainCamera.orthographic = false;
-        Camera.transform.position = new Vector3(0, 3, 10);
-        Camera.transform.Rotate(-90, 0, 0);
+        //Camera.transform.position = new Vector3(0, 3, 10);
+        //Camera.transform.Rotate(-90, 0, 0);
+        Camera.transform.position = new Vector3(0, 120, 76.6f); //Sets the new camera position
+        Camera.transform.Rotate(-45, 0, 0); //Sets the camera to a side on view
         MainCamera.clearFlags = CameraClearFlags.Skybox; //Turns background to use the skybox
     }
 
