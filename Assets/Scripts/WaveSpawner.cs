@@ -8,8 +8,8 @@ public class WaveSpawner : MonoBehaviour
     public Transform spawnPoint;
 
     public float timeBetweenWaves = 5;
-    private float countdown = 2f;
     public float currentSpeed = 10f;
+    private float countdown = 2f;
     private int waveNumber = 0;
 
     void Start()
@@ -29,18 +29,14 @@ public class WaveSpawner : MonoBehaviour
 
     IEnumerator SpawnWave()
     {
-        //Currently spawns 2 enemys on wave 2
-        
-        
+        //Currently spawns 2 enemys on wave 2 and more on 3 ect
             waveNumber++;
             currentSpeed++;
-
             for (int i = 0; i < waveNumber; i++)
             {
                 SpawnEnemy();
                 yield return new WaitForSeconds(0.5f);
             }
-        
     }
 
     void SpawnEnemy()

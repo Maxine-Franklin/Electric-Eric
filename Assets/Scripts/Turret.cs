@@ -15,12 +15,12 @@ public class Turret : MonoBehaviour
     [Header("Unity Variables")]
     public string enemyTag = "Enemy";
     public Transform partToRotate;
-
     public GameObject bulletprefab;
     public Transform firePoint;
 
     void Start()
     {
+        //Starts loop to find targets
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
     }
 
@@ -71,7 +71,8 @@ public class Turret : MonoBehaviour
 
         //Smooth out the rotation of the turret from one rotation to the other
         Vector3 rotation = Quaternion.Lerp(partToRotate.rotation, lookRotation, Time.deltaTime * turnSpeed).eulerAngles;
-
+        
+        //Rotate the turret
         partToRotate.rotation = Quaternion.Euler(0f, rotation.y, 0f);
 
         if (fireCountDown <= 0f)
@@ -91,6 +92,7 @@ public class Turret : MonoBehaviour
             bullet.Seek(target);
     }
 
+    //Creates the area size which the turret shots in the editor
     private void OnDrawGizmosSelected()
     {
         Gizmos.DrawWireSphere(transform.position, range);

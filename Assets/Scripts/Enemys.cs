@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class Enemys : MonoBehaviour
 {
+    [Header("Turret Properties")]
     public float speed = 10f;
-    private Transform target;
     public WaveSpawner wave;
+
+    private Transform target;
     private int wavepointIndex = 0;
 
     void Start()
@@ -19,9 +21,10 @@ public class Enemys : MonoBehaviour
     {
         wave = GameObject.Find("GameControlSystem").GetComponent<WaveSpawner>();
         speed = wave.currentSpeed;
+
+        //Move enemy along waypoint path
         Vector3 dir = target.position - transform.position;
         transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
-
         if (Vector3.Distance(transform.position, target.position) <= 0.2f)
         {
             GetNewtWayPoint();
@@ -30,8 +33,10 @@ public class Enemys : MonoBehaviour
 
     void GetNewtWayPoint()
     {
+        //Look into waypoint if goes over the amount of waypoints delete the target 
         if (wavepointIndex >= Waypoints.wayPoints.Length - 1)
         {
+            //This will need to be set to build the dam in the finished product
             Destroy(gameObject);
             return;
         }
